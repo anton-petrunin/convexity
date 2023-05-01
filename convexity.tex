@@ -90,7 +90,7 @@ In case $a+b<c$ or $b+c<a$ we assume $\tilde\angle_\kappa(a,b,c)=0$.
 
 \item $\Uparrow_p^q$ --- the set of all directions at $p$ of minimizing geodesics from $p$ to $q$ 
 
-\item $A$ --- usually an Alexandrov's space
+\item $A$ --- usually Alexandrov's space
 
 \item $\argmax$ --- see page~\pageref{argmax}
 
@@ -165,10 +165,10 @@ is concave.
 \end{thm}
 
 
-If $A$ is an Alexandrov's space with non-empty boundary\footnote{Boundary of Alexandrov's space is defined in \cite[7.19]{BGP}.}, 
+If $A$ is Alexandrov's space with non-empty boundary\footnote{Boundary of Alexandrov's space is defined in \cite[7.19]{BGP}.}, 
 then its \emph{doubling} $\tilde A$
 (that is, two copies of $A$ glued along their boundaries) 
-is also an Alexandrov's space (see \cite[5.2]{perelman:spaces2}) and $\partial \tilde A=\emptyset$.
+is also Alexandrov's space (see \cite[5.2]{perelman:spaces2}) and $\partial \tilde A=\emptyset$.
 
 Set $\mathtt{p}\:\tilde A\to A$ to be the canonical map. 
 
@@ -193,7 +193,7 @@ A function $f\:A\to \RR$ is called \textit{semiconcave} if for any point $x\in A
 Let $\phi\:\RR\to \RR$ be a continuous function. 
 A function $f\:A\to \RR$ is called \emph{$\phi(f)$-concave} (briefly $f''\le \phi(f)$) if for any point $x\in A$ and any $\eps>0$ there is a neighborhood $\Omega_x\ni x$ such that $f|_{\Omega_x}$ is $(\phi\circ f(x)+\eps)$-concave
 
-For the Alexandrov's spaces with curvature $\ge \kappa$, it is natural to consider the functions satisfying $f''+\kappa{\cdot}f\le 1$.
+For Alexandrov's spaces with curvature $\ge \kappa$, it is natural to consider the functions satisfying $f''+\kappa{\cdot}f\le 1$.
 The advantage of such functions comes from the fact that on the model space%
 \footnote{\label{Lob_k} that is, 
 the simply connected 2-manifold of constant curvature $\kappa$ 
@@ -216,13 +216,13 @@ Then it will define the same set of functions, see corollary~\ref{cor:cont-conv}
 
 \subsection{Differential} 
 
-Given a point $p$ in an Alexandrov's space  $A$, we denote by \label{T_p} $T_p=T_p A$ the tangent cone at $p$.
+Given a point $p$ in Alexandrov's space  $A$, we denote by \label{T_p} $T_p=T_p A$ the tangent cone at $p$.
 
-For an Alexandrov's space, the tangent cone can be defined in two equivalent ways (see \cite[7.8.1]{BGP}):
+For Alexandrov's space, the tangent cone can be defined in two equivalent ways (see \cite[7.8.1]{BGP}):
 \begin{enumerate}[$\diamond$]
 \item As a cone over space of directions at a point
 \item \label{tangent-def2}
-As a limit of rescalings of the Alexandrov's space, that is:
+As a limit of rescalings of Alexandrov's space, that is:
 
 Given $\lam>0$, we denote the space by $\lam{\cdot} A$, the rescaling of $A$ by factor $\lam$.
 Let $i_\lam\: \lam{\cdot} A\to A$ be the canonical map. 
@@ -283,7 +283,7 @@ $$\nabla_p f=\d_p f(\xi_{\max})\cdot\xi_{\max} $$
 where $\xi_{\max}\in \Sigma_p$%
 \footnote{\label{U_p}By $\Sigma_p\i T_p$ we denote the set of unit
 vectors, which we also call directions at $p$. 
-The space $(\Sigma_p,\angle)$ with angle metric is an Alexandrov's space with curvature $\ge 1$. $(\Sigma_p,\angle)$ it is also path-isometric to the subset $\Sigma_p\i T_p$.} 
+The space $(\Sigma_p,\angle)$ with angle metric is Alexandrov's space with curvature $\ge 1$. $(\Sigma_p,\angle)$ it is also path-isometric to the subset $\Sigma_p\i T_p$.} 
 is the (necessarily
 unique) 
 unit vector for which the function $\d_p f$ attains its maximum.
@@ -533,7 +533,7 @@ see \cite{grad-flow-book}.
 
 \subsection{Definition and main properties}\label{def-grad-curv}
 
-Given a curve $\gamma(t)$ in an Alexandrov's space $A$, we denote by $\gamma^+(t)$ 
+Given a curve $\gamma(t)$ in Alexandrov's space $A$, we denote by $\gamma^+(t)$ 
 the right, and by 
 $\gamma^-(t)$ the left, tangent vectors to  $\gamma(t)$, where, respectively,
 $$\gamma^\pm(t)\in T_{\gamma(t)},\ \ \ 
@@ -555,7 +555,7 @@ for any $t$.
 \end{thm}
 
 \begin{thm}{\bf Proposition.}\label{prop:gradlip} Given a $\lambda$-concave
-function $f$ on an Alexandrov's space $A$ and a point $p\in A$ there is a unique
+function $f$ on Alexandrov's space $A$ and a point $p\in A$ there is a unique
 gradient curve $\alpha\colon [0,\infty) \rightarrow A$ such that $\alpha(0)=p$. 
 \end{thm} 
 
@@ -783,7 +783,7 @@ and the convergence $f_n\circ\bar\alpha_n\to f\circ\bar\alpha.$\qeds
 
 \subsection{Gradient flow}\label{grad-flow}
 
-Let $f$ be a semi-concave function on an Alexandrov's space $A$. 
+Let $f$ be a semi-concave function on Alexandrov's space $A$. 
 We define the $f$-\emph{gradient flow} to be the one parameter family of maps 
 $$\Phi^t_f\:A\to A, \ \ \Phi^t_f(p)=\alpha_p(t),$$
 where $t\ge 0$ and $\alpha_p\:[0,\infty)\to A$ is the $f$-gradient curve which
@@ -877,7 +877,7 @@ On the other hand $f(t)={\dist^2_x(\gamma(t))}$ is $2$-concave; in particular, $
 Passing to $t\to\pm\infty$, we get $b_+(x)+b_-(x)\le0$ for any $x\in A$.
 Hence $$b_+(x)+b_-(x)\equiv 0.$$
 
-Set $A'=b_+^{-1}(0)\i A$, it forms an Alexandrov space since it is a closed convex set.
+Set $A'=b_+^{-1}(0)\i A$, it forms Alexandrov's space since it is a closed convex set.
 Note that $|\nabla b_\pm|\equiv 1$, therefore $1$-Lipschitz curve $\alpha$, such that $b_\pm(\alpha(t))=t+\Const$ is a $b_\pm$-gradient curve. 
 In this case curve $\alpha(-t)$ is a $b_\mp$-gradient curve.
 It follows that for any $t>0$, $\Phi_{b_+}^t\circ\Phi_{b_-}^t=\id_A$.
@@ -900,8 +900,7 @@ for the definitions of extremal subset and
 quasigeodesic. 
 
 \begin{thm}{\bf Generalized Lieberman's Lemma.}\label{lib-lem} Any unit-speed geodesic for the
-induced intrinsic metric on an extremal subset is a quasigeodesic in the ambient
-Alexandrov's space.
+induced intrinsic metric on an extremal subset is a quasigeodesic in ambient Alexandrov's space.
 \end{thm}
 
 
@@ -963,7 +962,7 @@ If $Y\i X$, then to define \emph{gradient homotopy relative to} $Y$ we assume in
 
 Then theorem~\ref{thm:per-ser} follows from lemma~\ref{lem:stable-grad-curves} and the following lemma:
 
-\begin{thm}{\bf Lemma \cite{petrunin:grad-hom}.}\label{lem:hom-approx} Let $A$ be an Alexandrov's space without proper extremal subsets and $K$ be a finite simplicial complex. 
+\begin{thm}{\bf Lemma \cite{petrunin:grad-hom}.}\label{lem:hom-approx} Let $A$ be Alexandrov's space without proper extremal subsets and $K$ be a finite simplicial complex. 
 Then, given $\eps>0$, for any  homotopy 
 $$F_t\:K\to A,\ \ t\in [0,1]$$ one can construct an $\eps$-close gradient homotopy 
 $$G_t\:K\to A$$ such that $G_0\equiv F_0$.
@@ -1000,7 +999,7 @@ even in the Riemannian universe.
 
 \ 
 
-Let $A$ be an Alexandrov's space and $p\in A$, consider the function $f\z=\dist_p^2/2$.
+Let $A$ be Alexandrov's space and $p\in A$, consider the function $f\z=\dist_p^2/2$.
 Recall that $i_{\lam}\:\lam{\cdot} A\to A$ denotes canonical maps (see
 page~\pageref{tangent-def2}). 
 Consider the one parameter family of maps
@@ -1011,8 +1010,7 @@ Let us define the \textit{gradient exponential map} as the limit
 $$\gexp_p\:T_p A\to A,\ \ \  \gexp_p=\lim_{t\to\infty}\Phi^t_{f}\circ i_{e^t}.$$
 
 \noi \textit{Existence and uniqueness of gradient exponential.} 
-If $A$ is
-an Alexandrov's space with curvature $\ge 0$, then $f''\le 1$  and from
+If $A$ is Alexandrov's space with curvature $\ge 0$, then $f''\le 1$  and from
 lemma~\ref{lem:dist-est}, $\Phi^t_{f}$ is an $e^t$-Lipschitz and therefore
 compositions $\Phi^t_{f}\circ i_{e^t}\:e^t{\cdot} A\to A$ are \emph{short}%
 \footnote{that is, the maps with Lipschitz constant 1.}. 
@@ -1406,7 +1404,7 @@ and $\lambda<0$%
 exists by theorem~\ref{thm:strictly-concave}}.
 Then, since $f$ is continuous, sub-graph
 $$X_f=\{(x,y)\in \bar\Omega\times\RR|y\le f(x)\}$$
-is closed convex subset of $A\times\RR$, therefore it forms an Alexandrov's
+is closed convex subset of $A\times\RR$, therefore it forms Alexandrov's
 space. 
 
 Since $f$ is not Lipschitz at $p$, there is a sequence of pairs of points
@@ -1453,7 +1451,7 @@ to $p$.
 
 Assume $\kappa=\lambda=0$ then sub-graph of $f$
 $$X_f=\{(x,y)\in A\times\RR\ |\ y\le f(x)\}$$ 
-is a closed convex subset, therefore it forms an Alexandrov's space.
+is a closed convex subset, therefore it forms Alexandrov's space.
 
 Applying the above remark, we get that if $\gamma$ is a unit-speed curve in
 $X_f\backslash \partial X_f$ with convex $0$-developing with respect to any
@@ -1465,7 +1463,7 @@ Clearly, $f_\eps\to f$ as $\eps\to 0$, hence $f\circ\gamma$ is concave.
 
 For $\lambda$-concave function the set $X_f$ is no longer convex, but it becomes convex if one changes metric on $A\times\RR$ to \emph{parabolic cone}%
 \footnote{\label{par-cone} that is, a warped-product
-$\RR\times_{\exp(\Const{\cdot}t)} A$, which is an Alexandrov's space, see \cite[4.3.3]{BGP} and \cite{alexander-bishop:worps}} 
+$\RR\times_{\exp(\Const{\cdot}t)} A$, which is Alexandrov's space, see \cite[4.3.3]{BGP} and \cite{alexander-bishop:worps}} 
 and then one can repeat the same arguments.\qeds
 
 
@@ -1523,8 +1521,8 @@ $$\vol_{m-1}\partial A\le \vol_{m-1}S^{m-1}$$
 where $\partial A$ denotes the boundary of $A$ and $S^{m-1}$ the unit $(m-1)$-sphere.
 \end{thm}
 
-The problem would have followed from conjecture~\ref{conj:bry} (that boundary of
-an Alexandrov's space is an Alexandrov's space), but before this conjecture has been proven, any partial
+The problem would have followed from conjecture~\ref{conj:bry}
+(that boundary of Alexandrov's space is Alexandrov's space), but before this conjecture has been proven, any partial
 result is of some interest.
 Among other corollaries of
 conjecture~\ref{conj:bry}, it is expected that if $A\in \Alex(1)$ then $\partial
@@ -1619,12 +1617,11 @@ Imagine that you want to move a heavy box inside an empty room by pushing it aro
 If the box is located in the middle of the room, you  can push it in any direction. 
 But once it is pushed against a wall you can not push it back to the center;
 and once it is pushed into a corner you cannot push it anywhere anymore. 
-The same is true if one tries to move a point in an Alexandrov's space by pushing
+The same is true if one tries to move a point in Alexandrov's space by pushing
 it along a gradient flow, but the role of walls and corners is played by  extremal
 subsets.
 
-Extremal subsets first appeared in the study of their special case --- the boundary of
-an Alexandrov's space; 
+Extremal subsets first appeared in the study of their special case --- the boundary of Alexandrov's space; 
 introduced by Perelman and me in \cite{perelman-petrunin:extremal}, 
 and
 were studied further in \cite{petrunin:extremal}
@@ -1676,18 +1673,18 @@ proportionate to~$\eps$.
 \item A point $p\in A$ forms a one-point extremal subset if its
 space of directions $\Sigma_p$ has a diameter $\le\tfrac\pi2$
 \item \label{ex:t-cone}
-If one takes a subset $X$ of points of an Alexandrov's space with tangent cones
+If one takes a subset $X$ of points of Alexandrov's space with tangent cones
 homeomorphic to each other then its closure of $X$ forms an extremal subset.
 The same holds for the closure of a connected component of of $X$.
 
 Equivalently, the set $X$ can be described as a set of points with homeomorphic small spherical neighborhoods. The equivalence follows from Perelman's stability theorem.
 
 In particular, if in this construction we take points with tangent cone homeomorphic
-to $\RR_{+}\times \RR^{m-1}$ then we get the boundary of an Alexandrov's space.
+to $\RR_{+}\times \RR^{m-1}$ then we get the boundary of Alexandrov's space.
 
 This follows from theorem~\ref{thm:dist-extr} and the Morse lemma (property~\ref{morse} page~\pageref{morse}). 
 
-\item  Let $G$ be a closed subgroups in the group of isometries of an Alexandrov space $A$.
+\item  Let $G$ be a closed subgroups in the group of isometries of Alexandrov's space $A$.
 Denote by $A^G$ the fixed point set of $G$.
 Then the projection of $A^G$ in $A/G$ forms an extremal subset.
 
@@ -1698,8 +1695,7 @@ Then the projection of $A^G$ in $A/G$ forms an extremal subset.
 \noi The following theorem gives an equivalence of our definition of extremal subset and the definition given in
 \cite{perelman-petrunin:extremal}:
 
-\begin{thm}{\bf Theorem.}\label{thm:dist-extr}  A closed subset $E$ in
-an Alexandrov's space $A$ is extremal if and only if for any $q\in A\backslash E$,
+\begin{thm}{\bf Theorem.}\label{thm:dist-extr}  A closed subset $E$ in Alexandrov's space $A$ is extremal if and only if for any $q\in A\backslash E$,
 the following condition is fulfilled:
 
 If $\dist_q$ has a local minimum on $E$ at a point $p$, then $p$ is a critical
@@ -2133,14 +2129,14 @@ superior tool since they can be defined for infinitely dimensional Alexandrov's 
 In section~\ref{CF}, we defined $\lambda$-concave functions  as those locally
 Lipschitz functions whose restriction to any unit-speed minimizing geodesic is
 $\lambda$-concave. 
-Now consider a curve $\gamma$ in an Alexandrov's space such that restriction of any
+Now consider a curve $\gamma$ in Alexandrov's space such that restriction of any
 $\lambda$-concave function to $\gamma$ is $\lambda$-concave.
 It is easy to see that for any Riemannian manifold $\gamma$ has to be a unit-speed
 geodesic. 
-In a general Alexandrov's space $\gamma$ should only be a
+In general Alexandrov's space $\gamma$ should only be a
 quasigeodesic.
 
-\begin{thm}{\bf Definition.} A curve $\gamma$ in an Alexandrov's space is called
+\begin{thm}{\bf Definition.} A curve $\gamma$ in Alexandrov's space is called
 \emph{quasigeodesic} if for any $\lambda\in\RR$, given a $\lambda$-concave
 function $f$, the real-to-real function $f\circ\gamma$ is $\lambda$-concave.
 \end{thm}
@@ -2202,7 +2198,7 @@ The proof is  given in the appendix~\ref{constr-qg}.
 
 Applying the definition locally, 
 we get that if $f''+\kappa{\cdot}f\le 1$ then $f\circ\gamma$ is $(1-\kappa{\cdot}f\circ\gamma)$-concave (see section~\ref{variation-CF}). 
-In particular, if $A$ is an Alexandrov's space with curvature $\ge\kappa$, $p\in
+In particular, if $A$ is Alexandrov's space with curvature $\ge\kappa$, $p\in
 A$ and $h_p(t)=\rho_\kappa\circ\dist_p\circ\gamma(t)$%
 \footnote{Function
 $\rho_\kappa\:\RR\to\RR$ is defined on page~\pageref{rho_k}} 
@@ -2224,7 +2220,7 @@ for any $t>0$ (if $\kappa>0$ then in addition $t\le\pi/\sqrt\kappa$).
 
 Let us give a more geometric property using the notion of {\it developing} defined below. 
 
-{\it Any quasigeodesic in an Alexandrov's space with curvature $\ge \kappa$, has a
+{\it Any quasigeodesic in Alexandrov's space with curvature $\ge \kappa$, has a
 convex $\kappa$-developing with respect to any point.}
 
 
@@ -2330,18 +2326,18 @@ or
 Is it possible to approximate any finite quasigeodesic by sequence of
 broken lines with bounded variation of turn?
 
-\item Is it true that in an Alexandrov's space without boundary there is an
+\item Is it true that in Alexandrov's space without boundary there is an
 infinitely long geodesic?
 \end{enumerate}
 
 As it was noted by A.~Lytchak, the first and last questions can be reduced to the following:
-Assume $A$ is a compact Alexandrov's $m$-space without boundary. Let us set
+Assume $A$ is compact Alexandrov's $m$-space without boundary. Let us set
 $V(r)=\int_A\vol_m(B_r(x))$,
 then $V(r)=\vol_m(A)\omega_m r^m+o(r^{m+1})$.
 The technique of \emph{tight maps} makes it possible to prove only that
 $V(r)\z=\vol_m(A)\omega_m r^m+O(r^{m+1})$.
 Note that if $A$ is a Riemannian manifold with boundary then $V(r)=\vol_m(A)\omega_m r^m+\vol_{m-1}(\partial A)\omega'_m
-r^{m+1}+o(r^{m+1})$.
+r^{m+1}+o(r^{m+1})$.%\footnote{These two questions answered affirmatively in }
 
 
 
@@ -2498,7 +2494,7 @@ dimension \label{lob-k-m}$\Lob_\kappa^m$ (that is $m$-dimensional simply connect
 These techniques were introduced by Perelman in \cite{perelman:morse}
 and \cite{perelman:DC}.
 
-We start with the local existence of a strictly concave function on an Alexandrov's space.
+We start with the local existence of a strictly concave function on Alexandrov's space.
 
 \begin{thm}{\bf Theorem~\cite[3.6]{perelman:morse}.}
 \label{thm:strictly-concave}
@@ -2562,13 +2558,13 @@ It can be constructed by taking the minimum of the functions in these theorems. 
 
 
 \begin{thm}{\bf Claim.}\label{cor:convex-nbhd}
-For any point of an Alexandrov's space there is an arbitrary small closed convex
+For any point of Alexandrov's space there is an arbitrary small closed convex
 neighborhood.
 \end{thm}
 
 Applying rescaling and passing to the limit, 
 one can estimate the size of the convex
-hull in an Alexandrov's space in terms of the volume of a ball containing it:
+hull in Alexandrov's space in terms of the volume of a ball containing it:
 
 \begin{thm}{\bf Lemma on strictly concave convex hulls
 \cite[4.3]{perelman-petrunin:extremal}.}
@@ -2591,7 +2587,7 @@ particular needs.
 Here we introduce one such variation which is not the most general, but general
 enough to work in most applications.
 
-Let $A$ be an Alexandrov's space and $f\:A\to \RR$,
+Let $A$ be Alexandrov's space and $f\:A\to \RR$,
 $$f=\Theta(\dist^2_{q_1},\dist^2_{q_2},\dots,\dist^2_{q_N})$$ be a \emph{simple
 function} (see section~\ref{adm}).
 If $A$ is $m$-dimensional, we say that such a function $f$ has \emph{controlled
@@ -3160,24 +3156,24 @@ It includes Morse lemma (property~\ref{morse} page~\pageref{morse}) and
 \begin{enumerate}[$\diamond$]
 
 \item{\it Local structure theorem \cite{perelman:morse}.}
-Any small spherical neighborhood of a point in an Alexandrov's space is homeomorphic to a cone over its boundary.
+Any small spherical neighborhood of a point in Alexandrov's space is homeomorphic to a cone over its boundary.
 
 \item{\it Stability theorem \cite{perelman:spaces2}.} 
 For any compact $A\in \Alex^m(\kappa)$ there is $\eps>0$ such that if $A'\in \Alex^m(\kappa)$ is $\eps$-close to $A$ then $A$ and $A'$ are homeomorphic.
 
 \end{enumerate}
-The other series is the regularity results on an Alexandrov's space. 
+The other series is the regularity results on Alexandrov's space. 
 These results obtained by Perelman in \cite{perelman:DC} 
 are improvements of earlier results of Otsu and Shioya in \cite{otsu-shioya} and \cite{otsu:second-der}. 
 It use mainly
 the corollary~\ref{cor:conv-chart} and the smoothing trick; see subsection~\ref{smooth}. 
 \begin{enumerate}[$\diamond$]
-\item Components of metric tensor of an Alexandrov's space in a chart are continuous
+\item Components of metric tensor of Alexandrov's space in a chart are continuous
 at each regular point%
 \footnote{that is, at each point with Euclidean tangent space}. 
 Moreover they have bounded variation and are differentiable almost everywhere.
 \item The Christoffel symbols  in a chart are well defined as signed Radon measures.
-\item Hessian of a semiconcave function on an Alexandrov's space is defined almost
+\item Hessian of a semiconcave function on Alexandrov's space is defined almost
 everywhere. 
 That is, if $f\:\Omega\to\RR$ is a semiconcave function, then for almost
 any $x_0\in \Omega$ there is a symmetric bi-linear form $\Hess_f$ such that
@@ -3220,7 +3216,7 @@ $m$-dimensional manifolds with uniform lower curvature, this is proved in
 
 
 
-\section{Please deform an Alexandrov's space.}
+\section{Please deform Alexandrov's space.}
 \setcounter{subsection}{1}
 
 In this section we discuss a number of related open problems. 
@@ -3237,7 +3233,7 @@ For example, assume you want to solve the Hopf conjecture;
 that is, you want to find out
 if $S^2\times S^2$ carries a metric with positive sectional curvature. 
 Assuming such metrics exist, 
-there is a volume maximizing Alexandrov's metrics $d$
+there is volume maximizing Alexandrov's metrics $d$
 on $S^2\times S^2$ with curvature $\ge 1$.
 (There is no reason to believe
 that this metric $d$ is Riemannian, but from Gromov's compactness theorem such
@@ -3247,27 +3243,27 @@ we could find some special properties of $d$  and in ideal situation we could ar
 
 At the moment, except for boring rescaling, there is no variation procedure available.
 The following conjecture (if true) would give such a procedure.
-Although it will not be sufficient to solve the Hopf conjecture, it will give some information about the critical Alexandrov's metric.
+Although it will not be sufficient to solve the Hopf conjecture, it will give some information about critical Alexandrov's metric.
 
 \begin{thm}{\bf Conjecture.}\label{conj:bry}
-The boundary of an Alexandrov's space equipped with induced intrinsic metric is an
-Alexandrov's space with the same lower curvature bound.
+The boundary of Alexandrov's space equipped with induced intrinsic metric is Alexandrov's space with the same lower curvature bound.
 \end{thm}
 
 This also can be reformulated as:
 
 \bigskip
 
-\noi{\bf \ref{conj:bry}$'\!\!\!$. Conjecture.}{\it\ Let $A$ be an Alexandrov space without boundary. Then a convex hypersurface in $A$ equipped with induced intrinsic metric is an Alexandrov's space with the same lower curvature bound.}
+\noi{\bf \ref{conj:bry}$'\!\!\!$. Conjecture.}{\it\ Let $A$ be Alexandrov space without boundary.
+Then a convex hypersurface in $A$ equipped with induced intrinsic metric is Alexandrov's space with the same lower curvature bound.}
 
 \bigskip
 
 This conjecture, if true, would give a variation procedure. 
-For example if $A$ is a non-negatively curved Alexandrov's space and $f\:A\to\RR$ is concave (so $A$ is necessarily open) then for any $t$ the graph
+For example if $A$ is non-negatively curved Alexandrov's space and $f\:A\to\RR$ is concave (so $A$ is necessarily open) then for any $t$ the graph
 $$A_t
 =
 \{(x,t{\cdot} f(x))\in A\times\RR\}$$
-with induced intrinsic metric would be an Alexandrov's space. 
+with induced intrinsic metric would be Alexandrov's space. 
 Clearly $A_t\GHto A$ as $t\to0$. 
 An analogous construction exists for semiconcave functions on closed manifolds, but
 one has to take a \emph{parabolic cone} 
@@ -3287,7 +3283,7 @@ Alexandrov's spaces.
 One has to start with defining a curvature tensor of Alexandrov's spaces (it
 should be a measure-valued tensor field), then prove that the constructed tensor is really responsible for the geometry of the space. 
 Such things were already done in the two-dimensional case
-and for the spaces with two-sided  bounded curvature,
+and for the spaces with two-sided curvature bound,
 see \cite{reshetnyak:curvature} and
 \cite{nikolaev:curvature} respectively.
 So far the best results in this direction are given by Perelman in \cite{perelman:DC}, see also section~\ref{app-tight} for more details.
@@ -3308,7 +3304,7 @@ The following question is closely related to conjecture~\ref{conj:bry}.
 Assume $A_n\GHto A$, $A_n\in \Alex^m(\kappa)$, $\dim A=m$ (that is, 
 it is not a collapse).
 
-Let $f$ be a $\lambda$-concave function of an Alexandrov's space $A$. 
+Let $f$ be a $\lambda$-concave function of Alexandrov's space $A$. 
 Is it always possible to find a sequence of $\lambda$-concave functions
 $f_n\:A_n\to \RR$ which converges to $f\:A\to\RR$? 
 \end{thm}
@@ -3335,13 +3331,13 @@ limits of Riemannian manifolds of the same dimension.
 Therefore, even in this reduced generality, 
 an answer is valuable.
 
-The question of whether an Alexandrov space is smoothable is also far from being solved.
-From Perelman's stability theorem, if an Alexandrov's space has topological singularities then it is not smoothable.
+The question of whether Alexandrov's space is smoothable is also far from being solved.
+From Perelman's stability theorem, if Alexandrov's space has topological singularities then it is not smoothable.
 Moreover, by a theorem of Kapovitch in \cite{kapovitch:regularity},
 one has that any space of
-directions of a smoothable Alexandrov's space is homeomorphic to the sphere. 
+directions of smoothable Alexandrov's space is homeomorphic to the sphere. 
 Except for the 2-dimensional case, it is only known that any polyhedral metric of non-negative curvature on a 3-manifold is smoothable (see \cite{matveev:smooth}).
-There is yet no procedure of smoothing an Alexandrov's space even in a neighborhood of a regular point.
+There is yet no procedure of smoothing Alexandrov's space even in a neighborhood of a regular point.
 
 Maybe a more interesting question is whether smoothing is unique up to a diffeomorphism. 
 If the answer is positive it would imply in particular that any Riemannian
@@ -3419,7 +3415,7 @@ they are monotonic in the
 sense of the following definition:
 
 \begin{thm}{\bf Definition.}
-A curve $\alpha(t)$ in an Alexandrov's space $A$ is called \emph{monotonic} with
+A curve $\alpha(t)$ in Alexandrov's space $A$ is called \emph{monotonic} with
 respect to a parameter value $t_0$ if for any $\lambda$-concave function $f$,
 $\lambda\ge 0$, we have that function
 $$t
@@ -3611,7 +3607,7 @@ Let us first define entropy of pre-quasigeodesic, which measures ``how far'' a g
 pre-quasigeodesic is from being a quasigeodesic.
 
 \begin{thm}{\bf Definition.}\label{def:entropy}
-Let $\gamma$ be a pre-quasigeodesic in an Alexandrov's space.
+Let $\gamma$ be a pre-quasigeodesic in Alexandrov's space.
 
 The \emph{entropy} of $\gamma$, $\mu_\gamma$ is the measure on the set of parameters
 defined by
@@ -3701,12 +3697,12 @@ is convex.
 \subsection{Step 3: Quasigeodesics}\label{step3}
 
 
-We will construct quasigeodesics in an $m$-dimensional Alexandrov's space, assuming
+We will construct quasigeodesics in $m$-dimensional Alexandrov's space, assuming
 we already have such a construction in all dimensions $<m$. 
-This construction is much easier for the case of an Alexandrov's space with only
+This construction is much easier for the case of Alexandrov's space with only
 \textit{$\delta$-strained points}; in this case we construct a sequence of special pre-quasigeodesics only by
 extending/chopping procedures (see below) and then pass to the limit.
-In a general Alexandrov's space we argue by contradiction, we assume that $\Omega$ is a maximal
+In general Alexandrov's space we argue by contradiction, we assume that $\Omega$ is a maximal
 open set such that for any initial data one can construct an
 $\Omega$-quasigeodesic 
 (that is, a pre-quasigeodesic with zero {\it entropy} on
@@ -3751,7 +3747,7 @@ for any $v\in T_p$.
 The proof is taken from \cite{milka:poly1}. That is the only instance where we use
 existence of quasigeodesics in lower dimensional spaces.
 
-\Proof. Since $\Sigma_p$ is an Alexandrov's $(m-1)$-space with curvature $\ge 1$, given
+\Proof. Since $\Sigma_p$ is Alexandrov's $(m-1)$-space with curvature $\ge 1$, given
 $\xi\in \Sigma_p$ we can construct a quasigeodesic in $\Sigma_p$ of length
 $\pi$, starting at $\xi$; the comparison inequality (theorem
 \ref{thm:eq-def-qg}(\ref{comp-inq})) implies that if $\xi^*$ is the other end of
